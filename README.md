@@ -2,6 +2,10 @@
 
 A FileMaker Server docker image.
 
+# Know Isues
+
+For now, it's impossible to connect to the admin and the fmsadmin resetpw cmd don't reconnise the pin code ...
+
 ## First thing to do
 
 You need to replace "PUT_HERE_YOUR_PERSONNAL_URL" in the Dockerfile with the link of the filemaker server you want install
