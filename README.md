@@ -2,6 +2,12 @@
 
 A FileMaker Server docker image.
 
+## First thing to do
+
+You need to replace "PUT_HERE_YOUR_PERSONNAL_URL" with the link of the filemaker server you want install
+
+and add your "LicenseCert.fmcert" in your directory with others files 
+
 ## Command to build
 
 ```
