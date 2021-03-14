@@ -22,6 +22,8 @@ docker build -t fms19 .
 
 ```
 docker run -it -p 5003:5003 -p 16000:16000 -p 443:443 -p 80:80 -p 16001:16001 fms19
+or this if you want persitent data :
+docker run -it -p 5003:5003 -p 16000:16000 -p 443:443 -p 80:80 -p 16001:16001  --mount source=fm-database,target='/opt/FileMaker/FileMaker Server/Data/Databases/' --mount source=fm-backup,target='/opt/FileMaker/FileMaker Server/Data/Backups/' --mount source=fm-documents,target='/opt/FileMaker/FileMaker Server/Data/Documents/' --mount source=fm-preferences,target='/opt/FileMaker/FileMaker Server/Data/Preferences/' fms19
 ```
 
 ## Reset default credentials
